@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8250-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8250-common/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/xiaomi/sm8250-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/sm8250-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
@@ -33,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
@@ -106,29 +104,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libozoprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libozoprocessing.so \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.configservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configservice@1.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@2.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcssip@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcssip@1.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.ims.rcsuce@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsuce@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/feature_enabler_client:$(TARGET_COPY_OUT_VENDOR)/bin/feature_enabler_client \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
@@ -152,7 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
@@ -164,14 +149,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
@@ -191,9 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -225,7 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
@@ -245,11 +224,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
@@ -263,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
@@ -277,13 +253,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona.xml \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona_vendor.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_performance_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_codecs_performance_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona_vendor.xml \
@@ -296,17 +268,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
@@ -323,18 +289,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/a650_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b02 \
     vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.mdt \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_uc.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b00 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_uc.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b01 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_uc.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b02 \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -345,7 +299,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
@@ -444,7 +397,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsoc_helper_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoc_helper_jni.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
@@ -501,6 +453,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/com.dsi.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.dsi.ant@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -520,7 +473,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/consumerir.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.kona.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
@@ -639,7 +591,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
@@ -751,8 +702,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/se_nq_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdap.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmisoundfx.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
@@ -801,6 +755,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.lce@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
@@ -875,9 +830,7 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.kona.api30 \
     PowerOffAlarm \
-    ImsRcsService \
     QtiTelephonyService \
     DaxUI \
     WfdService \
@@ -890,16 +843,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    vendor.qti.ims.callcapability-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.configservice-V1.0-java \
-    vendor.qti.ims.factory-V1.0-java \
-    vendor.qti.ims.factory-V1.1-java \
-    vendor.qti.ims.factory-V2.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.1-java \
-    vendor.qti.ims.rcsconfig-V2.0-java \
-    vendor.qti.ims.rcsconfig-V2.1-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
